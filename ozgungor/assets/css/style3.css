@@ -1,0 +1,176 @@
+/* Hizmetler*/
+/* about-page */
+
+.page-header{
+    background:url(/assets/images/hizmetler.jpg) center center no-repeat;
+    position: relative; 
+    padding: 150px 0 85px; 
+    background-size: cover; 
+    background-position:50% -40px;
+    
+}
+
+/* Breadcrump */
+.breadcrumbs {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Dikey hizalamayı ayarlar */
+    color: var(--white);
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 12px;
+    font-family: var(--ff-montserrat);
+    font-weight: 700;
+    
+}
+.row h2{
+    z-index: 111;
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumbs li {
+    display: flex;
+    align-items: center; /* Dikey hizalamayı ayarlar */
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: "›";
+    margin: 0 8px;
+    color: #ffffff; /* Ayracın rengini ayarlar */
+}
+.page-header-breadcrump{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bread-active{
+    color: #ed2024;
+}
+
+/* hizmet kartları */
+.contain-card{
+    width: 350px;
+    position: relative;
+    margin: 17px;
+    text-align: center;
+    transition: var(--transition);
+}
+.contain-card p{
+    text-align: left;
+}
+.flex-list{
+    display: flex;
+    justify-content: center;
+    padding: 86px 0 25px;
+
+}
+.card-image{
+    height: 201px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.truck-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contain-card:hover{
+    transform: translateY(-12px);
+
+}
+.contain-card a:hover{
+    border-radius: 0 10px 0 10px;
+    transition: ease 0.5s;
+    background-color: var(--dark-orange);
+    color: #ffffff;
+    border: none;
+}
+.truck-1{
+    background-image: url('/assets/images/konteynertasima.png');
+    
+}
+.truck-2{
+    background-image: url('/assets/images/agiryuktasima.png');
+    
+}
+.truck-3{
+    background-image: url('/assets/images/projetasimaciligi.png');
+    
+}
+
+.contain-card p{
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.vizyon-misyon-text p{
+    text-align: center;
+}
+
+
+/* responsive */
+
+@media (max-width:768px) {
+    .page-header{
+        padding: 140px 0 90px;
+        text-align: center;
+      }
+    
+    .contain-card{
+        width: 100%;
+    }
+    .truck-container {
+        
+        display: flex;
+        margin-inline: auto;
+      }
+}
+@media (min-width: 640px) {
+  
+    /**
+     * REUSED STYLE
+     */
+  
+ 
+  
+    .truck-container {
+      max-width: 540px;
+      display: flex;
+      margin-inline: auto;
+    }
+}
+
+@media (min-width: 768px) {
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .truck-container { max-width: 720px; }
+    
+
+   
+}
+
+@media (min-width: 992px) {
+    .truck-container{max-width: 960px;}
+}
+
+@media (min-width: 1200px) {
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .truck-container { max-width: 1180px; }
+  
+
+}
